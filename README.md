@@ -17,7 +17,7 @@ pip3 install . -r requirements.txt
 ## How to collect data
 Set-up the project folder, where you clone this repository, in `idoldc/settings.py`:
 ```python
-PROJECT_URL = '/home/username/dcinside-scraper'
+PROJECT_URL = "/home/username/dcinside-scraper"
 ```
 
 Download the latest **5 pages** from **MIYAWAKI SAKURA** **minor** gallery:
@@ -28,21 +28,21 @@ scrapy crawl idoldc -a BASEURL=https://gall.dcinside.com/mgallery/board/lists?id
 The collected data will be saved as JSON in a `data` folder in your project folder. 
 An example of JSON as follows: 
 ```JSON
-[{'error': False,
- 'gall_count': '34',
- 'gall_recommend': '0',
- 'gall_type': 'mgallery',
- 'gallery': 'sakura0319',
- 'post_id': '3660470',
- 'post_type': 'icon_pic',
- 'referer': 'http://gall.dcinside.com/mgallery/board/lists?id=sakura0319&page=2&list_num=100',
- 'reply_num': '4',
- 'title': '사쿠라 귀여워',
- 'uploaded_date': "2021-07-22 23:12:32",
- 'url': '/mgallery/board/view/?id=sakura0319&no=3660470',
- 'userid': 'fiesta',
- 'userip': '',
- 'usernick': 'user-nick-name'}]
+[{"error": false,
+ "gall_count": "34",
+ "gall_recommend": "0",
+ "gall_type": "mgallery",
+ "gallery": "sakura0319",
+ "post_id": "3660470",
+ "post_type": "icon_pic",
+ "referer": "http://gall.dcinside.com/mgallery/board/lists?id=sakura0319&page=2&list_num=100",
+ "reply_num": "4",
+ "title": "사쿠라 귀여워",
+ "uploaded_date": "2021-07-22 23:12:32",
+ "url": "/mgallery/board/view/?id=sakura0319&no=3660470",
+ "userid": "fiesta",
+ "userip": "",
+ "usernick": "user-nick-name"}]
 ```
 
 ## Citatation
